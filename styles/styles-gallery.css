@@ -1,0 +1,90 @@
+/* Anders Rochester, portfolio 2017 */
+/* gallery.html */
+
+
+.card__text--type-serif {
+  font-size: 3.7em;
+}
+
+.card {
+	width: 83%;
+	max-height: 1510px;
+	margin: 0px auto 35px;
+}
+
+.link:hover { 
+  opacity: 0.85;
+}
+
+/* gallery */
+
+.gallery {
+  grid-template-rows: repeat(17, 80px);
+}
+
+.gallery__item__title {
+  color: #ffeeff00;
+  font-size: 24px;
+  font-family: Helvetica;
+  height: 0;
+}
+
+
+@media screen and (orientation: landscape) {
+  
+  .header {
+    visibility: visible;
+  }
+  
+  .header > .navigation__list .navigation__list__item { 
+    padding: 0 40px;
+  } 
+  
+  .card__text--type-serif {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 1.5em;
+  }
+  
+  .gallery__item__title {
+    height: 0;
+  }
+
+  /* position of the cards in the grid */
+  
+  .card--four { 
+    grid-column: 1 / 6;
+    grid-row: 1 / 6;
+  }
+  
+  .card__image { 
+    height: 180px;
+    flex-grow: 1;
+  }
+  
+  .gallery { 
+    grid-template-rows: repeat(18, 59px);
+  }
+  .link >.gallery__image {
+    max-height: 100%;
+  }
+
+  .gallery__item__title:hover {
+    color: navy;
+    z-index: 100;
+  }
+
+  .gallery__item__two .gallery__item__title:hover {
+ 	 color: whitesmoke;
+   height: 100px;
+  }
+
+  .gallery__item__three .gallery__item__title:hover {
+    color: whitesmoke;
+  }
+
+  .gallery__item__six .gallery__item__title:hover {
+    color: #000000;
+  }
+  
+  
+}
