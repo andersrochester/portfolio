@@ -7,11 +7,14 @@
 }
 
 .card {
-	width: 83%;
+	/*! width: 83%; */
 	max-height: 1510px;
 	margin: 0px auto 35px;
 }
 
+.card--page-title {
+  background: #a9b9c9;
+}
 .link:hover { 
   opacity: 0.85;
 }
@@ -41,8 +44,8 @@
   } 
   
   .card__text--type-serif {
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-    font-size: 1.5em;
+    /*! font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; */
+    /*! font-size: 1.5em; */
   }
   
   .gallery__item__title {
@@ -51,9 +54,13 @@
 
   /* position of the cards in the grid */
   
+  .card--page-title {
+    grid-column: 1 / 6;
+  }
+  
   .card--four { 
     grid-column: 1 / 6;
-    grid-row: 1 / 6;
+    grid-row: 2/7;
   }
   
   .card__image { 

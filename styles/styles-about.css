@@ -9,7 +9,7 @@
 .card {
 	/*! width: 83%; */
 	max-height: 1510px;
-	/*! margin: 0px auto 35px; */
+	margin: 0px auto 35px;
 }
 
 .link:hover { 
